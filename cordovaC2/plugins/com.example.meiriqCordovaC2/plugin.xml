@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.example.meiriqCordovaC2"
+        version="0.7.0">
+
+  <name>MeiriqCordovaC2</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/meiriqCordovaC2.js" target="js/meiriqCordovaC2.js"/>
+
+  <js-module src="www/meiriqCordovaC2.js" name="meiriqCordovaC2">
+    <clobbers target="meiriqCordovaC2" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="MeiriqCordovaC2">
+        <param name="android-package" value="com.example.plugin.MeiriqCordovaC2"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/MeiriqCordovaC2.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="MeiriqCordovaC2">
+        <param name="ios-package" value="MeiriqCordovaC2" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/MeiriqCordovaC2.h" target-dir="MeiriqCordovaC2Plugin"/>
+    <source-file src="src/ios/MeiriqCordovaC2.m" target-dir="MeiriqCordovaC2Plugin"/>
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/MeiriqCordovaC2.cs"/>
+  </platform>
+
+</plugin>

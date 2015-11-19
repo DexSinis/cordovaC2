@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"MeiriqCordovaC2\"><param name=\"ios-package\" value=\"MeiriqCordovaC2\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.cordovaC2"
+        },
+        "com.example.meiriqCordovaC2": {
+            "PACKAGE_NAME": "com.example.cordovaC2"
+        }
+    },
+    "dependent_plugins": {}
+}

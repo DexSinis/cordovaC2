@@ -1,0 +1,65 @@
+/*
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ */
+//
+// Prefix header for all source files of the 'CordovaC2' target in the 'CordovaC2' project
+//
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#define INMOBI_INITIALIZE   @"e94166bc01f643f6bef2ec5be4ca8a70"
+
+#define INMOBI_BANNER           14483552340911
+#define INMOBI_INTERSTITIAL     1445856826396
+
+#define GDTAPPID @"1104955480"
+#define GDTPID   @"2060800627448292"
+
+#define GDTAPPIDBANNER @"1104903075"
+#define GDTPIDBANNER   @"6070605619648394"
+
+#define YouMiKey @"ed3c8472c4a263b3"
+#define YouMISCKey @"5e4e6ca4ae819c57"
+
+
+
+#define TALKINGDATAKEY @"EC686861392E2AC8F3240ABF3E3F3813"
+
+#define HMNotificationCenter [NSNotificationCenter defaultCenter]
+#define HMAddObsver(methodName, noteName) [HMNotificationCenter addObserver:self selector:@selector(methodName) name:noteName object:nil];
+#define HMRemoveObsver [HMNotificationCenter removeObserver:self];
+
+/** 通知 */
+#define HMAppleStoreDidSelectNotification @"HMAppleStoreDidSelectNotification"
+#define HMSelectedAppleStore @"HMSelectedAppleStore"
+
+#define HMCancleDidSelectNotification @"HMCancleDidSelectNotification"
+#define HMSelectedCancle @"HMSelectedCancle"
+
+#define HMAdvicesDidSelectNotification @"HMAdvicesDidSelectNotification"
+#define HMSelectedAdvices @"HMSelectedAdvices"
+
+#define HMvedioIsOKNotification  @"HMvedioIsOK"
+#define HMSelectedvedioIsOK @"HMSelectedvedioIsOK"
+
+#define PlayVedioNotification @"PlayVedioNotification"
+
+#endif
